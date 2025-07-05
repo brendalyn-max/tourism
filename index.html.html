@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Explore Uganda Safaris</title> 
+    <!-- Google Fonts --> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">  <style>
+        body {
+
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: url(hero.jpg.jfif) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: linear-gradient(90deg, red, #48cae4);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: red;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: red;
+        }
+
+        .hero {
+            
+            background: url('image/hero.jpg') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px red;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: red;
+        }
+        
+        .cards {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            justify-content: flex-start;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(36, 139, 67, 0.1);
+            margin: 10px;
+            width: 250px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #0077b6;
+        }
+
+        .card p {
+            padding: 0 10px 10px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: red;
+        }
+
+        footer {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+        #about p {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+         <h1>Wander World</h1>
+          <p>Experience the Pearl of Africa Like Never Before</p>
+    </header>
+    <nav>
+         <a href="#home">Home</a>
+         <a href="#destinations">Destinations</a>
+          <a href="#about">About Us</a>
+          <a href="#packages">Packages</a> 
+          <a href="#gallery">Gallery</a>
+           <a href="#contact">Contact</a></nav>
+    <section id="home" class="hero"> 
+        <h1>Welcome to Wander World</h1>
+         <p>Your trusted partner in unforgettable
+            travel experiences</p>
+    </section>
+    <section id="destinations">
+         <h2>Our Top Destinations</h2>
+          <div class="cards">
+             
+             <div class="card">
+                 
+                 
+                 <img
+                    src="murchison.jpg.jfif" alt="Murchison Falls">
+                     
+                    
+                    <h3>Murchison Falls</h3>
+                     
+                      <p>See the powerful waterfall and wildlife safari.</p>
+                  </div> 
+                  <div class="card">
+                      
+                     <img
+                    src="bwindi.jpg.jpg" alt="Bwindi Forest">
+                     
+                     <h3>Bwindi Forest</h3> 
+                      
+                      <p>Go gorilla trekking in the dense rainforest.</p>
+                  </div>
+                   <div class="card">
+                     
+                      <img src="bunyonyi.jpg.jfif"
+                    alt="Lake Bunyonyi">
+                     
+                      <h3>Lake Bunyonyi</h3>
+                       
+                       <p>Relax at Uganda's most beautiful lake
+                    resort.</p>
+                  </div> 
+                  <div class="card">
+                     
+                      <img src="queen.jpg.jfif" alt="Queen Elizabeth">
+                     
+                
+                       <h3>Queen Elizabeth Park</h3>
+                       
+                        <p>See tree climbing lions and Kazinga channel boat cruise.</p>
+                 </div>
+                  <div class="card">
+                     
+                      <img src="kidepo.jpg.jfif" alt="Kidepo Valley">
+                      
+                       <h3>Kidepo</h3>
+                      
+                     <p>Explore Uganda's remote wilderness with unique wildlife.</p>
+                 </div>
+                 </div>
+    </section>
+    <section id="about">
+         <h2>About Us</h2>
+          <p>Explore Uganda Safaris is dedicated to offering exceptional tour
+            services across Uganda and East Africa. Our team is passionate about showcasing the beauty, wildlife, and
+            culture of Uganda to the world.</p>
+    </section>
+    <section id="packages">
+         <h2>Our Packages</h2>
+          <div class="cards">
+             
+             <div class="card">
+                 
+                
+                 <img
+                    src="safari.jpg.webp" alt="3 Days Safari">
+                     
+                    
+                     <h3>3 Days Murchison Safari</h3>
+                      
+                       <p>Gamedrives, boat cruise, and top of falls hike. <strong>$500 pp</strong></p>
+                  </div>
+                  <div   class="card">
+                 
+                <img src="gorilla.jpg.jfif" alt="5 Days Gorilla Trekking">
+                
+                  <h3>5 Days Gorilla Trekking</h3>
+                     
+                     <p>Track gorillas in Bwindi and relax at Lake Bunyonyi. <strong>$1200 pp</strong> </p> 
+             </div>
+              <div class="card">
+                 
+                  <img src="queenpackage.jpg.webp"
+                    alt="4 Days Queen Elizabeth">
+                    
+                     <h3>4 Days Queen Elizabeth Safari</h3>
+                     
+                     <p>Game drive, boat cruise, and chimp tracking in Kyambura. <strong>$800 pp</strong></p> 
+                </div> 
+                 <div class="card">
+                
+                     <img src="kidepopackage.jpg.webp" alt="6 Days Kidepo">
+                     
+                      <h3>6 Days Kidepo & Murchison</h3>
+                
+                      <p>Discover Kidepo wilderness and Murchison Falls beauty. <strong>$1600 pp</strong></p>
+                     
+                     </div>
+        </div>
+    </section>
+    <section id="gallery">
+         <h2>Gallery</h2>
+         <div class="cards">
+             
+             <div class="card">
+                 
+                 
+                <img
+                    src="gallery1.jpg.webp" alt="Safari Vehicle">
+                    
+                     
+                     <p>Our 4x4 Safari Vehicles</p>
+                     
+                     </div> 
+                     
+            <div class="card">
+                 
+                <img src="gorilla2.jpg" alt="Gorilla Trek">
+                
+                  <p>Memorable GorillaTrekking</p>
+                  </div>
+                   <div class="card">
+                     <img src="canoeing.jpg" alt="Lake Bunyonyi Canoe">
+                    
+                     <p>Canoeing at Lake Bunyonyi</p>
+                 </div>
+        </div>
+    </section>
+    <section id="contact">
+         <h2>Contact Us</h2>
+          <p>Contact Person: <strong>Musoki Brendalyn</strong></p>
+          <div
+            class="contact-form">
+            
+             <form>
+                  <label>Name</label>
+                 <input type="text" placeholder="Your name" required>
+                <label>Email</label> 
+                <input type="email" placeholder="Your email" required> 
+                <label>Message</label>
+                <textarea rows="4" placeholder="Your message"></textarea>
+                 <button type="submit">Send Message</button> 
+
+            </form>
+         </div>
+    </section>
+    <footer>
+         <p>Follow us on Facebook | Instagram | Twitter</p>
+         <p>&copy; 2025 Explore Uganda Safaris. All rights
+            reserved.</p>
+    </footer>
+</body>
+
+</html>
